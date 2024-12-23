@@ -43,4 +43,23 @@ console.log(perimeterOfRectangle("-4",2));
 
 //! ---------------------------------------------------------------------
 
+//* 4. Find the Largest number of four Numbers.
+
+function largestNumber (num1,num2,num3,num4) {
+  console.log(num1,num2,num3,num4);
+  num1 = Number(num1);
+  num2 = Number(num2);
+  num3 = Number(num3);
+  num4 = Number(num4);
+  // let largestNumber = Math.max(num1,num2,num3,num4);
+  // return largestNumber;
+
+  let max = num1 > num2 ? (num1 > num3 ? (num1 > num4 ? num1 : num4) : (num3 > num4 ? num3 :num4)) : (num2 > num3 ? (num2 > num4 ? num2 : num4) : (num3 > num4 ? num3 : num4));
+  return max;
+}
+console.log(largestNumber(22,8,102,16));
+console.log(largestNumber(22,8,"365",16));
+console.log(largestNumber(-22,-8,-102,-16));
+
+//! ---------------------------------------------------------------------
 
