@@ -1,4 +1,4 @@
-//* 1. Find the difference of two integers :
+//* 1. Find the difference of two integers.
 
 function differenceOfTwoIntegers(num1, num2) {
   console.log(num1, num2);
@@ -27,3 +27,20 @@ console.log(evenOrOdd("23"));
 console.log(evenOrOdd(-6));
 
 //! ---------------------------------------------------------------------
+
+//* 3. Calculate the perimeter of the Rectangle.
+
+function perimeterOfRectangle (length,width) {
+    console.log(length,width);
+    length = Number(length);
+    width = Number(width);
+    return "Perimeter of a Rectangle P = " + 2 * (length+width);
+
+}
+console.log(perimeterOfRectangle(5,6));
+console.log(perimeterOfRectangle("8",7));
+console.log(perimeterOfRectangle("-4",2));
+
+//! ---------------------------------------------------------------------
+
+
