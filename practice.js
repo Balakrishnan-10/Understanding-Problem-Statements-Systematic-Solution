@@ -80,4 +80,21 @@ console.log(calculateAverage("-2",-1,8));
 
 //! ---------------------------------------------------------------------
 
+//* Identify if a number is divisible by both 3 and 5.
+ 
+function divisibleByBothNumbers (num) {
+  console.log(num);
+  num = Number(num);
+  if (num % 3 == 0 && num % 5 == 0) {
+    return "If a number is divisible by both 3 and 5"
+  }
+  else return "If a number is not divisible by both 3 and 5"
+
+}
+console.log(divisibleByBothNumbers(15));
+console.log(divisibleByBothNumbers("15"));
+console.log(divisibleByBothNumbers(10));
+
+//! ---------------------------------------------------------------------
+
 
