@@ -116,14 +116,16 @@ console.log(countDigits("25467p0000"));
 
 //* 5. Check if a string contains only alphabets :
 
-function isAlphabets (string) {
-    if (string == "") return false;
-    for (ind = 0; ind < string.length; ind++) 
-        if(string[ind] >= "a" && string[ind] <= "z" ||
-            string[ind] >= "A" && string[ind] <= "Z" 
-        ) continue;
-        else return false;
-        return true;
+function isAlphabets(string) {
+  if (string == "") return false;
+  for (ind = 0; ind < string.length; ind++)
+    if (
+      (string[ind] >= "a" && string[ind] <= "z") ||
+      (string[ind] >= "A" && string[ind] <= "Z")
+    )
+      continue;
+    else return false;
+  return true;
 }
 console.log(isAlphabets("Bala"));
 console.log(isAlphabets("Bala123"));
@@ -135,12 +137,38 @@ console.log(isAlphabets(""));
 //* 6. Calcuate the area of circle with a given Radius (r) :
 
 function areaOfCircle(radius) {
-console.log(radius);
-return (Math.PI * radius * radius).toFixed(2);
+  console.log(radius);
+  return (Math.PI * radius * radius).toFixed(2);
 }
 console.log(areaOfCircle(5));
 console.log(areaOfCircle(2.5));
 
 //! ---------------------------------------------------------------------
+
+//* 7. Check if a character is a vowel :
+
+function isVowels(char) {
+  console.log(char);
+  //   return "aeiouAEIOU".indexOf(char.charAt(0)) != -1; one method
+  
+  // Another Method
+  return (
+    char == "a" ||
+    char == "e" ||
+    char == "i" ||
+    char == "o" ||
+    char == "u" ||
+    char == "A" ||
+    char == "E" ||
+    char == "I" ||
+    char == "O" ||
+    char == "U"
+  );
+}
+console.log(isVowels("A"));
+console.log(isVowels("o"));
+console.log(isVowels("s"));
+console.log(isVowels("B"));
+console.log(isVowels("U"));
 
 //! ---------------------------------------------------------------------
