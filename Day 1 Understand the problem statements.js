@@ -114,6 +114,22 @@ console.log(countDigits("25467p0000"));
 
 //! ---------------------------------------------------------------------
 
+//* 5. Check if a string contains only alphabets :
+
+function isAlphabets (string) {
+    if (string == "") return false;
+    for (ind = 0; ind < string.length; ind++) 
+        if(string[ind] >= "a" && string[ind] <= "z" ||
+            string[ind] >= "A" && string[ind] <= "Z" 
+        ) continue;
+        else return false;
+        return true;
+}
+console.log(isAlphabets("Bala"));
+console.log(isAlphabets("Bala123"));
+console.log(isAlphabets("Bala krish"));
+console.log(isAlphabets(""));
+
 //! ---------------------------------------------------------------------
 
 //! ---------------------------------------------------------------------
