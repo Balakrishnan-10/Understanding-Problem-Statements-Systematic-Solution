@@ -11,3 +11,19 @@ console.log(differenceOfTwoIntegers(5, "8"));
 console.log(differenceOfTwoIntegers("12", 3));
 
 //! ---------------------------------------------------------------------
+
+//* 2. Check if a number is even or odd.
+
+function evenOrOdd(num) {
+  console.log(num);
+  num = Number(num);
+  if (num % 2 == 0) {
+    return "Even Number";
+  } else return "Odd Number";
+}
+console.log(evenOrOdd(12));
+console.log(evenOrOdd(7));
+console.log(evenOrOdd("23"));
+console.log(evenOrOdd(-6));
+
+//! ---------------------------------------------------------------------
