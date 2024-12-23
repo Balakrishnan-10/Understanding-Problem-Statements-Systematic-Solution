@@ -63,3 +63,21 @@ console.log(largestNumber(-22,-8,-102,-16));
 
 //! ---------------------------------------------------------------------
 
+//* 5. Calculate the Average of three numbers.
+
+function calculateAverage (num1,num2,num3){
+  console.log(num1,num2,num3);
+  num1 = Number(num1);
+  num2 = Number(num2);
+  num3 = Number(num3);
+  let A = ((num1 + num2 + num3)/3).toFixed(2)
+  return "Average of three numbers = " + A ;
+
+}
+console.log(calculateAverage(2,4,8));
+console.log(calculateAverage(-2,-1,0));
+console.log(calculateAverage("-2",-1,8));
+
+//! ---------------------------------------------------------------------
+
+
