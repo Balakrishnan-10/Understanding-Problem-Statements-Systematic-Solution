@@ -12,7 +12,8 @@
 10. Calculate the perimeter of the Rectangle.
 11. Find the Largest number of four Numbers.
 12. Calculate the Average of three numbers.
-13. Identify if a number is divisible by both 3 and 5
+13. Identify if a number is divisible by both 3 and 5.
+17. Find the square of the number.
 
 
 

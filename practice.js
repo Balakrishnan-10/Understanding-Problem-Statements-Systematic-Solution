@@ -80,7 +80,7 @@ console.log(calculateAverage("-2",-1,8));
 
 //! ---------------------------------------------------------------------
 
-//* Identify if a number is divisible by both 3 and 5.
+//* 6. Identify if a number is divisible by both 3 and 5.
  
 function divisibleByBothNumbers (num) {
   console.log(num);
@@ -94,6 +94,20 @@ function divisibleByBothNumbers (num) {
 console.log(divisibleByBothNumbers(15));
 console.log(divisibleByBothNumbers("15"));
 console.log(divisibleByBothNumbers(10));
+
+//! ---------------------------------------------------------------------
+
+//* 10. Find the square of the number.
+
+function calculateSquare (num){
+  console.log(num);
+  num = Number(num);
+  return "Square of the number is : " + (num * num);
+
+}
+console.log(calculateSquare(20));
+console.log(calculateSquare("-202"));
+console.log(calculateSquare(-4));
 
 //! ---------------------------------------------------------------------
 
