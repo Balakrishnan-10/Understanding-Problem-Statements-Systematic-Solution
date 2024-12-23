@@ -132,6 +132,15 @@ console.log(isAlphabets(""));
 
 //! ---------------------------------------------------------------------
 
+//* 6. Calcuate the area of circle with a given Radius (r) :
+
+function areaOfCircle(radius) {
+console.log(radius);
+return (Math.PI * radius * radius).toFixed(2);
+}
+console.log(areaOfCircle(5));
+console.log(areaOfCircle(2.5));
+
 //! ---------------------------------------------------------------------
 
 //! ---------------------------------------------------------------------
