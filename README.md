@@ -6,6 +6,7 @@
 4. Count a digits in a number.
 5. Check if a string contains only alphabets.
 6. Calcuate the area of circle with a given Radius (r).
+7. Check if a character is a vowel
 
 
 
