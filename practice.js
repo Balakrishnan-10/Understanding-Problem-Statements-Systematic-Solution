@@ -30,23 +30,22 @@ console.log(evenOrOdd(-6));
 
 //* 3. Calculate the perimeter of the Rectangle.
 
-function perimeterOfRectangle (length,width) {
-    console.log(length,width);
-    length = Number(length);
-    width = Number(width);
-    return "Perimeter of a Rectangle P = " + 2 * (length+width);
-
+function perimeterOfRectangle(length, width) {
+  console.log(length, width);
+  length = Number(length);
+  width = Number(width);
+  return "Perimeter of a Rectangle P = " + 2 * (length + width);
 }
-console.log(perimeterOfRectangle(5,6));
-console.log(perimeterOfRectangle("8",7));
-console.log(perimeterOfRectangle("-4",2));
+console.log(perimeterOfRectangle(5, 6));
+console.log(perimeterOfRectangle("8", 7));
+console.log(perimeterOfRectangle("-4", 2));
 
 //! ---------------------------------------------------------------------
 
 //* 4. Find the Largest number of four Numbers.
 
-function largestNumber (num1,num2,num3,num4) {
-  console.log(num1,num2,num3,num4);
+function largestNumber(num1, num2, num3, num4) {
+  console.log(num1, num2, num3, num4);
   num1 = Number(num1);
   num2 = Number(num2);
   num3 = Number(num3);
@@ -54,42 +53,54 @@ function largestNumber (num1,num2,num3,num4) {
   // let largestNumber = Math.max(num1,num2,num3,num4);
   // return largestNumber;
 
-  let max = num1 > num2 ? (num1 > num3 ? (num1 > num4 ? num1 : num4) : (num3 > num4 ? num3 :num4)) : (num2 > num3 ? (num2 > num4 ? num2 : num4) : (num3 > num4 ? num3 : num4));
+  let max =
+    num1 > num2
+      ? num1 > num3
+        ? num1 > num4
+          ? num1
+          : num4
+        : num3 > num4
+        ? num3
+        : num4
+      : num2 > num3
+      ? num2 > num4
+        ? num2
+        : num4
+      : num3 > num4
+      ? num3
+      : num4;
   return max;
 }
-console.log(largestNumber(22,8,102,16));
-console.log(largestNumber(22,8,"365",16));
-console.log(largestNumber(-22,-8,-102,-16));
+console.log(largestNumber(22, 8, 102, 16));
+console.log(largestNumber(22, 8, "365", 16));
+console.log(largestNumber(-22, -8, -102, -16));
 
 //! ---------------------------------------------------------------------
 
 //* 5. Calculate the Average of three numbers.
 
-function calculateAverage (num1,num2,num3){
-  console.log(num1,num2,num3);
+function calculateAverage(num1, num2, num3) {
+  console.log(num1, num2, num3);
   num1 = Number(num1);
   num2 = Number(num2);
   num3 = Number(num3);
-  let A = ((num1 + num2 + num3)/3).toFixed(2)
-  return "Average of three numbers = " + A ;
-
+  let A = ((num1 + num2 + num3) / 3).toFixed(2);
+  return "Average of three numbers = " + A;
 }
-console.log(calculateAverage(2,4,8));
-console.log(calculateAverage(-2,-1,0));
-console.log(calculateAverage("-2",-1,8));
+console.log(calculateAverage(2, 4, 8));
+console.log(calculateAverage(-2, -1, 0));
+console.log(calculateAverage("-2", -1, 8));
 
 //! ---------------------------------------------------------------------
 
 //* 6. Identify if a number is divisible by both 3 and 5.
- 
-function divisibleByBothNumbers (num) {
+
+function divisibleByBothNumbers(num) {
   console.log(num);
   num = Number(num);
   if (num % 3 == 0 && num % 5 == 0) {
-    return "If a number is divisible by both 3 and 5"
-  }
-  else return "If a number is not divisible by both 3 and 5"
-
+    return "If a number is divisible by both 3 and 5";
+  } else return "If a number is not divisible by both 3 and 5";
 }
 console.log(divisibleByBothNumbers(15));
 console.log(divisibleByBothNumbers("15"));
@@ -97,13 +108,12 @@ console.log(divisibleByBothNumbers(10));
 
 //! ---------------------------------------------------------------------
 
-//* 10. Find the square of the number.
+//* 7. Find the square of the number.
 
-function calculateSquare (num){
+function calculateSquare(num) {
   console.log(num);
   num = Number(num);
-  return "Square of the number is : " + (num * num);
-
+  return "Square of the number is : " + num * num;
 }
 console.log(calculateSquare(20));
 console.log(calculateSquare("-202"));
@@ -111,4 +121,29 @@ console.log(calculateSquare(-4));
 
 //! ---------------------------------------------------------------------
 
+//* 8. Count the number of vowels in a string.
 
+//! ---------------------------------------------------------------------
+
+//* 9. Determine if a character is a uppercase letter.
+
+//! ---------------------------------------------------------------------
+
+//* 10. Print the reverse of a string.
+
+function reversedString(str) {
+  console.log(str);
+  
+  // let reverse = str.split("").reverse().join("");
+  // return reverse;
+
+  let reverse = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverse += str[i];
+  }
+  return reverse;
+}
+console.log(reversedString("Hello World"));
+console.log(reversedString("Hi Bala"));
+
+//! ---------------------------------------------------------------------

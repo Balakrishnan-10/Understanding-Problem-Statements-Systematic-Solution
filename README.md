@@ -13,7 +13,10 @@
 11. Find the Largest number of four Numbers.
 12. Calculate the Average of three numbers.
 13. Identify if a number is divisible by both 3 and 5.
-17. Find the square of the number.
+14. Find the square of the number.
+15. Count the number of vowels in a string.
+16. Determine if a character is a uppercase letter.
+17. Print the reverse of the string.
 
 
 
