@@ -123,6 +123,29 @@ console.log(calculateSquare(-4));
 
 //* 8. Count the number of vowels in a string.
 
+function countVowels(str) {
+  console.log(str);
+  let vowels = 0;
+  for (let i = 0; i < str.length; i++)
+    if (
+      str[i] === "a" ||
+      str[i] === "e" ||
+      str[i] === "i" ||
+      str[i] === "o" ||
+      str[i] === "u" ||
+      str[i] === "A" ||
+      str[i] === "E" ||
+      str[i] === "I" ||
+      str[i] === "O" ||
+      str[i] === "U"
+    ) {
+      vowels++;
+    }
+  return vowels;
+}
+console.log(countVowels("Balakrishnan"));
+console.log(countVowels("aeipouAeioubcnjhf"));
+
 //! ---------------------------------------------------------------------
 
 //* 9. Determine if a character is a uppercase letter.
@@ -133,7 +156,7 @@ console.log(calculateSquare(-4));
 
 function reversedString(str) {
   console.log(str);
-  
+
   // let reverse = str.split("").reverse().join("");
   // return reverse;
 
