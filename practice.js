@@ -150,6 +150,19 @@ console.log(countVowels("aeipouAeioubcnjhf"));
 
 //* 9. Determine if a character is a uppercase letter.
 
+function isUppercase(char) {
+  console.log(char);
+  //* One Method
+  // return char.length === 1 && char === char.toUpperCase();
+
+  //* Another Method :
+  return /^[A-Z]$/.test(char);
+}
+console.log(isUppercase("A"));
+console.log(isUppercase("@"));
+console.log(isUppercase("e"));
+console.log(isUppercase("B"));
+
 //! ---------------------------------------------------------------------
 
 //* 10. Print the reverse of a string.
