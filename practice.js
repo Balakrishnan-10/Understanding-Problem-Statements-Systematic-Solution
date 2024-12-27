@@ -26,6 +26,21 @@ console.log(evenOrOdd(7));
 console.log(evenOrOdd("23"));
 console.log(evenOrOdd(-6));
 
+function evenOrOdd1(arr) {
+  console.log(arr);
+  let even = [];
+  let odd = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      even.push(arr[i]);
+    } else if (arr[i] % 2 !== 0) {
+      odd.push(arr[i]);
+    }
+  }
+  return { even, odd };
+}
+console.log(evenOrOdd1([1, 2, 3, 4, 5, 6,78, 10, 7]));
+
 //! ---------------------------------------------------------------------
 
 //* 3. Calculate the perimeter of the Rectangle.
